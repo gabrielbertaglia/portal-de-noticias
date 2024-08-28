@@ -79,6 +79,24 @@
   grid-auto-flow: column;
 } */
 
+.rowPerColum-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: initial;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rowPerColum-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: initial;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .even-columns {
   display: grid;
   gap: 1rem;

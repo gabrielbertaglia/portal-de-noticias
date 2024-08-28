@@ -1,0 +1,50 @@
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+
+#ai {
+  grid-area: ai;
+
+  img {
+    width: 80px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  h3 {
+    margin-block: 8px 4px;
+  }
+
+  .grid-flow-col .text {
+    grid-column: 2;
+  }
+
+  .text {
+    grid: grid;
+  }
+}
+
+
+@media (width >= 80em) {
+  .grid-flow-col {
+    grid-auto-flow: column;
+  }
+
+  #ai {
+    grid-area: ai;
+
+    .grid-flow-col .text {
+      grid-column: 1;
+    }
+
+    img {
+      width: 176px;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+
+    h3 {
+      margin-block: 8px 4px;
+    }
+  }
+}
