@@ -1,0 +1,58 @@
+#weekly {
+  grid-area: weekly;
+
+  & > div {
+    grid-template-columns: 1fr;
+  }
+
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .container-weekly {
+    figure {
+      position: relative;
+
+      .content-tag {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+      }
+
+      p {
+        margin-top: 8px;
+        font-weight: 800;
+      }
+    }
+  }
+}
+
+@media (width >= 80em){
+  #weekly {
+    & > div {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .gap-2 {
+      gap: 1rem
+    }
+
+    .container-weekly {
+      figure {
+        position: relative;
+
+        .content-tag {
+          position: absolute;
+          top: 8px;
+          left: 8px;
+        }
+
+        p {
+          margin-top: 8px;
+          font-weight: 800;
+        }
+      }
+    }
+  }
+}
