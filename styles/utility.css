@@ -34,7 +34,7 @@
 }
 
 .container {
-  --max-width: 375px;
+  --max-width: 360px;
   width: min(var(--max-width), 100% - var(--px-base) * 2);
   margin-inline: auto;
 }
@@ -71,8 +71,13 @@
   display: grid;
 }
 
-.grid-flow-col {
+/* .grid-flow-col {
   grid-auto-flow: column;
+} */
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
 }
 
 .grid-cols-2 {
@@ -114,5 +119,10 @@
 
   .desktop-only {
     display: initial;
+  }
+
+  .even-columns {
+    /* grid-auto-flow: column; */
+    grid-template-columns: 1fr 1fr;
   }
 }
