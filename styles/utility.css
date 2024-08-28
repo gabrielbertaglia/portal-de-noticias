@@ -1,4 +1,72 @@
 /* utility-first */
+.px-base {
+  padding-inline: var(--px-base);
+}
+
+.py-xs {
+  padding-block: var(--py-xs);
+}
+
+.py-base {
+  padding-block: var(--py-base);
+}
+
+.py-lg {
+  padding-block: var(--py-lg);
+}
+
+.py-xl {
+  padding-block: var(--py-xl);
+}
+
+.py-2xl {
+  padding-block: var(--py-2xl);
+}
+
+.py-3xl {
+  padding-block: var(--py-3xl);
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--stroke-color);
+}
+
+.container {
+  --max-width: 375px;
+  width: min(var(--max-width), 100% - var(--px-base) * 2);
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-0\.5 {
+  gap: 0.5rem;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
 .grid {
   display: grid;
 }
@@ -11,13 +79,13 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.gap-16 {
+/* .gap-16 {
   gap: 16px;
-}
+} */
 
-.gap-32 {
+/* .gap-32 {
   gap: 32px;
-}
+} */
 
 .text-2xl {
   font: var(--h1);
@@ -33,4 +101,18 @@
 
 .text-sm {
   font: var(--text-sm);
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (width >= 80em) {
+  .container {
+    --max-width: 80rem;
+  }
+
+  .desktop-only {
+    display: initial;
+  }
 }

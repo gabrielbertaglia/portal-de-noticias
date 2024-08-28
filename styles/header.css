@@ -1,25 +1,36 @@
 #primary {
-  padding-block: 20px;
+  .logo {
+    width: 100px;
+  }
 
-  div {
+  /* div {
     display: flex;
     align-items: center;
     gap: 8px;
-  }
+  } */
 
-  /* nesting css */
-  div:nth-child(2) {
-    margin-inline: auto;
-  }
+}
 
-  div:nth-child(3) {
-    justify-self: end;
+.horizontal {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+
+  a {
+    white-space: nowrap;
   }
 }
 
-#secondary {
+/* #secondary {
   padding-block: 14px;
   border: solid 1px var(--stroke-color);
   border-inline: none;
   justify-content: space-between;
+} */
+
+@media (width >= 80em){
+  #primary {
+    & .logo {
+      width: 160px;
+    }
+  }
 }
