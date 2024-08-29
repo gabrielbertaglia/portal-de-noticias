@@ -82,7 +82,6 @@ main {
   box-shadow: 0px 4px 16px rgba(2, 6, 23, 0.251);
 }
 
-
 @media (width >= 80em) {
   :root {
     --px-base: 2rem;
@@ -97,13 +96,13 @@ main {
   }
 
   main {
-  margin-block: 40px 80px;
-  row-gap: 80px;
-  column-gap: 32px;
+    margin-block: 40px 80px;
+    row-gap: 80px;
+    column-gap: 32px;
 
-  grid-template-areas:
-    "featured featured"
-    "weekly weekly"
-    "ai aside";
+    grid-template-areas:
+      "featured featured"
+      "weekly weekly"
+      "ai aside";
   }
 }

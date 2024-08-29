@@ -24,7 +24,6 @@
   }
 }
 
-
 @media (width >= 80em) {
   .grid-flow-col {
     grid-auto-flow: column;

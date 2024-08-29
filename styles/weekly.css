@@ -28,14 +28,14 @@
   }
 }
 
-@media (width >= 80em){
+@media (width >= 80em) {
   #weekly {
     & > div {
       grid-template-columns: repeat(4, 1fr);
     }
 
     .gap-2 {
-      gap: 1rem
+      gap: 1rem;
     }
 
     .container-weekly {
